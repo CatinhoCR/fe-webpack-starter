@@ -2,12 +2,12 @@
   padding-left: $padding-side-mobile;
   padding-right: $padding-side-mobile;
 
-  @include break-min($md) {
+  @include break-min($break-md) {
     padding-left: $padding-side-tablet;
     padding-right: $padding-side-tablet;
   }
 
-  @include break-min($lg) {
+  @include break-min($break-lg) {
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
   }
@@ -19,12 +19,12 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include break-min($lg) {
-    max-width: $lg;
+  @include break-min($break-lg) {
+    max-width: $break-lg;
   }
 
-  @include break-min($xl) {
-    max-width: $xl;
+  @include break-min($break-xl) {
+    max-width: $break-xl;
   }
 }
 

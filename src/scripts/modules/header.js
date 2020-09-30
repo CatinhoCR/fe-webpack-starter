@@ -4,16 +4,21 @@ class Header {
     this.render()
   }
   render() {
+    this.container = document.createElement('div')
+    this.container.className = 'site-header__inner'
+    this.header.appendChild(this.container)
     this.setupView()
-    this.header.appendChild(this.nav)
+
+
   }
 
   setupView() {
-		this.ul = document.createElement('ul')
-    this.ul.className = 'site-nav__list'
-		this.nav = document.createElement('nav')
+    this.nav = document.createElement('nav')
     this.nav.className = 'site-nav'
-		this.nav.appendChild(this.ul)
+    this.ul = document.createElement('ul')
+    this.ul.className = 'site-nav__list'
+    this.nav.appendChild(this.ul)
+    this.container.appendChild(this.nav)
 
     this.items = [
       { label: 'Home', url: '#/' },
