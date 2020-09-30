@@ -1,11 +1,3 @@
-// Z-Indexes mixins
-@function z($layer) {
-  @if not map-has-key($z-layers, $layer) {
-    @warn 'No layer found for `#{$layer}` in $z-layers map. Property omitted.';
-  }
-  @return map-get($z-layers, $layer);
-}
-
 // Display
 @mixin visually-hidden {
   border: 0;
