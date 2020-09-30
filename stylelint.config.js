@@ -9,7 +9,13 @@ module.exports = {
     'color-no-invalid-hex': true,
     'comment-empty-line-before': 'always',
     'comment-no-empty': true,
-    'indentation': 2,
+    indentation: [
+      2,
+      {
+        message: 'Please use 2 spaces for indentation.',
+        severity: 'warning',
+      },
+    ],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
     'declaration-block-no-duplicate-properties': true,
@@ -62,12 +68,8 @@ module.exports = {
     'rule-empty-line-before': [
       'always',
       {
-        'except': [
-          'first-nested',
-        ],
-        'ignore': [
-          'after-comment',
-        ],
+        except: ['first-nested'],
+        ignore: ['after-comment'],
       },
     ],
     'selector-attribute-brackets-space-inside': 'never',
@@ -110,4 +112,4 @@ module.exports = {
     'value-list-max-empty-lines': 0,
     'value-no-vendor-prefix': true,
   },
-};
+}

@@ -1,6 +1,7 @@
 # FE Starter
 
-A lightweight kickstarter for webpack based Front End projects, including a basic routing and a simple custom SCSS starter lib.
+A lightweight kickstarter for webpack based Front End projects, including a basic routing and SCSS support.
+This is a release branch, and tag, for a very minimal approach and starter kit.
 
 ## Installation
 
