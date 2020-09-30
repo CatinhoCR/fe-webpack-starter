@@ -5,7 +5,7 @@ See the [minimal version](https://github.com/CatinhoCR/fe-webpack-starter/tree/m
 
 ## Features
 
-- Super lightweight and helpful **custom** [SCSS Library](#scss-lib)
+- Super lightweight and helpful **custom** [SCSS Library](https://github.com/CatinhoCR/fe-webpack-starter#custom-scss-library)
 - ES6 Support via [babel](https://babeljs.io/)
 - JavaScript Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
 - SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
@@ -32,7 +32,7 @@ npm run start
 npm run build
 ```
 
-### Custom SCSS Library {#scss-lib}
+### Custom SCSS Library
 
 The custom SCSS Library is work in progress (and will forever be), PRs are welcome and any feedback too. Here's a comprehensive guide to what's going on there (To be written and specified)
 
