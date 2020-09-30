@@ -1,3 +1,4 @@
+// SEE: https://github.com/thoughtbot/bourbon/tree/master/core for more ideas
 // Vendors
 
 // Abstracts (Variables, Mixins, Functions)
@@ -7,10 +8,10 @@
 
 // Base (Normalizer, Globals, Typography)
 @import 'base/normalize';
+@import 'base/globals';
 // @import 'base/typography';
 // @import 'base/grid';
 // @import 'base/utilities';
-// @import 'base/globals';
 
 // Layout
 // @import 'layout/nav/nav';

@@ -1,6 +1,16 @@
 # FE Starter
 
-A lightweight kickstarter for webpack based Front End projects, including a basic routing and a simple custom SCSS starter lib.
+A lightweight kickstarter for webpack based Front End projects, includes a basic routing and a simple custom [SCSS starter Library](https://github.com/CatinhoCR/fe-webpack-starter/tree/master) I've worked on for fun.
+See the [minimal version](https://github.com/CatinhoCR/fe-webpack-starter/tree/minimal) if you're only after the webpack build tasks and workflow, without the SCSS Library or pretty much anything else.
+
+## Features
+
+- Super lightweight and helpful **custom** [SCSS Library](#scss-lib)
+- ES6 Support via [babel](https://babeljs.io/)
+- JavaScript Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
+- SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
+- Autoprefixing of browserspecific CSS rules via [postcss](https://postcss.org/) and [autoprefixer](https://github.com/postcss/autoprefixer)
+- Style Linting via [stylelint](https://stylelint.io/)
 
 ## Installation
 
@@ -13,7 +23,7 @@ If you'd rather use NPM, simply delete the `yarn.lock` file in the root folder a
 ### Start Dev Server
 
 ```bash
-npm start
+npm run start
 ```
 
 ### Build Prod Version
@@ -22,14 +32,17 @@ npm start
 npm run build
 ```
 
-### Features
+### Custom SCSS Library {#scss-lib}
 
-- ES6 Support via [babel](https://babeljs.io/)
-- JavaScript Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-- SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-- Autoprefixing of browserspecific CSS rules via [postcss](https://postcss.org/) and [autoprefixer](https://github.com/postcss/autoprefixer)
-- Style Linting via [stylelint](https://stylelint.io/)
+The custom SCSS Library is work in progress (and will forever be), PRs are welcome and any feedback too. Here's a comprehensive guide to what's going on there (To be written and specified)
 
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
+- [ ] Details on folder structure
+- [ ] Details on variables and each type
+- [ ] Functions & mixins explained
+- [ ] Usage & customization details
 
-Feel free to do PR's or fork. Originally based & extended from [this repo](https://github.com/wbkd/webpack-starter).
+#### Notes
+
+When you run `npm run build`, [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) is used to move the css to a separate file. The css file gets included in the head of the `index.html`.
+
+Originally based & extended from [webpack starter](https://github.com/wbkd/webpack-starter).
